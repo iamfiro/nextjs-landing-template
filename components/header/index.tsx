@@ -3,34 +3,13 @@ import style from './style.module.scss';
 import Image from 'next/image';
 import { headers } from 'next/headers';
 
-export const HeaderButtonPrimary = ({
+export const HeaderButton = ({
     children,
     href,
     backgroundColor = '#000',
     color = '#fff',
-    borderRadius = 'small'
-}: HeaderButtonProps) => {
-    const radius = borderRadiusValue[borderRadius] || '4px';
-
-    return (
-        <a 
-            href={href}
-            className={style.primaryButton}
-            style={{ 
-                backgroundColor,
-                color, 
-                borderRadius: radius 
-            }}
-        >{children}</a>
-    )
-};
-
-export const HeaderButtonSecondary = ({
-    children,
-    href,
-    backgroundColor = '#ffffff',
-    color = '#000000',
-    borderRadius = 'small'
+    borderRadius = 'small',
+    height = 40
 }: HeaderButtonProps) => {
     const radius = borderRadiusValue[borderRadius] || '4px';
 
@@ -42,7 +21,7 @@ export const HeaderButtonSecondary = ({
                 backgroundColor,
                 color, 
                 borderRadius: radius,
-                fontWeight: 600
+                height: `${height}px`
             }}
         >{children}</a>
     )

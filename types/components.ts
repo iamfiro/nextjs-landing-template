@@ -18,14 +18,16 @@ export interface HeaderProps {
     readonly menu: HeaderHrefList[];
     readonly children?: React.ReactNode;
 
-    readonly logoWidth?: number;
+    logoWidth?: number;
+    backgroundColor?: string;
 }
 
 export interface HeaderButtonProps {
-    children: React.ReactNode;
-    href: string;
+    readonly children: React.ReactNode;
+    readonly href: string;
 
     backgroundColor?: string;
     color?: string;
     borderRadius?: typeBorderRadius;
+    height?: number;
 }
