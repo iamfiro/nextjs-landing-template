@@ -19,7 +19,7 @@ export const IntroTitle = ({ type, title, description, titleFontSize = 40, child
                 <section className={style.row} style={styles}>
                     <h1 className={style.row_title} style={{ fontSize: fontSize, lineHeight: fontSize }}>{title}</h1>
                     <div className={style.row_right}>
-                        <span>Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.</span>
+                        <span>{description}</span>
                     </div>
                 </section>
             )
