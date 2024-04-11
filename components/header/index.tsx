@@ -3,11 +3,11 @@ import style from './style.module.scss';
 import Image from 'next/image';
 import { headers } from 'next/headers';
 
-const Header = ({ logo, menu, children, logoWidth = 20 }: HeaderProps) => {
+const Header = ({ logo, menu, children, logoWidth = 20, styles }: HeaderProps) => {
     const path = headers().get('x-pathname') || '/';
 
     return (
-        <header className={style.container}>
+        <header className={style.container} style={styles}>
             <div className={style.left}>
                 <Image src={logo} alt="Logo" height={logoWidth} />
                 <ul>

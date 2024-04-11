@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export type typeBorderRadius = 'none' | 'small' | 'medium' | 'big' | 'full';
+
 export const borderRadiusValue = {
     none: '0',
     small: '5px',
@@ -21,6 +22,7 @@ export interface HeaderProps {
 
     logoWidth?: number;
     backgroundColor?: string;
+    styles?: React.CSSProperties;
 }
 
 export interface ButtonProps {
@@ -41,4 +43,20 @@ export interface IntroTitleProps {
     description?: string;
     titleFontSize?: number;
     children?: React.ReactNode;
+    styles?: React.CSSProperties;
+}
+
+export interface SponsorListType {
+    name: string;
+    logo: StaticImageData;
+}
+
+export interface SponsorProps {
+    readonly title?: string;
+    readonly titleColor?: string;
+    readonly titleFontSize?: number;
+    readonly styles?: React.CSSProperties;
+    readonly grayScaleMode?: boolean;
+
+    SponsorList?: SponsorListType[];
 }
