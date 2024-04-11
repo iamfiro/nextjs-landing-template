@@ -1,6 +1,7 @@
-import { Button, Header, IntroTitle, Spacing, Sponsor } from "@/components";
+import { Button, CardList, Header, IntroTitle, Spacing, Sponsor } from "@/components";
 import Logo from "@/public/logo.png";
 import GoogleLogo from '@/public/sample-google.webp'
+import { CardListType } from "@/types/components";
 import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
@@ -27,19 +28,30 @@ export default function Home() {
         {
             name: 'Google',
             logo: GoogleLogo
+        }
+    ]
+
+    const CardListData: CardListType[] = [
+        {
+            title: 'Lorem Ipsum',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+            icon: GoogleLogo
         },
         {
-            name: 'Google',
-            logo: GoogleLogo
+            title: 'Lorem Ipsum',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+            icon: GoogleLogo
         },
         {
-            name: 'Google',
-            logo: GoogleLogo
+            title: 'Lorem Ipsum',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+            icon: GoogleLogo
         },
         {
-            name: 'Google',
-            logo: GoogleLogo
-        },
+            title: 'Lorem Ipsum',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+            icon: GoogleLogo
+        }
     ]
 	return (
 		<main>
@@ -51,7 +63,9 @@ export default function Home() {
             <IntroTitle type="column" title="The landing page template for NEXT.js developers" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." titleFontSize={55}>
                 <Button href="/login" fontSize={16} borderRadius="big" styles={{ padding: '5px 30px'}}><FaGithub /> Github</Button>
             </IntroTitle>
-            <Spacing height={120} />
+            <Spacing height={200} />
+            <CardList title="Our Services" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry" list={CardListData} />
+            <Spacing height={200} />
             <Sponsor title="Trust By over 1200+ customer" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry" SponsorList={SponsorList} grayScaleMode={true} />
 		</main>
 	);
