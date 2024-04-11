@@ -56,7 +56,7 @@ export default function Home() {
 	return (
 		<main>
             <Header logo={Logo} backgroundColor="#000000" menu={headerPath}>
-                <Button backgroundColor="#fff" color="#000" href="/login" borderRadius="medium">로그인</Button>
+                <Button backgroundColor="#fff" color="#000" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" borderRadius="medium">The Button</Button>
                 <Button href="/login" borderRadius="medium"><FaGithub /> Github</Button>
             </Header>
             <Spacing height={100} />
@@ -65,7 +65,7 @@ export default function Home() {
             </IntroTitle>
             <Spacing height={200} />
             <CardList title="Our Services" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry" list={CardListData} />
-            <Spacing height={200} />
+            <Spacing height={150} />
             <Sponsor title="Trust By over 1200+ customer" description="Lorem Ipsum is simply dummy text of the printing and typesetting industry" SponsorList={SponsorList} grayScaleMode={true} />
 		</main>
 	);
