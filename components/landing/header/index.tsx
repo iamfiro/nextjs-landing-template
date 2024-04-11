@@ -1,4 +1,4 @@
-import { HeaderProps } from '@/types/components';
+import { HeaderProps } from '@/types/landing/components';
 import style from './style.module.scss';
 import Image from 'next/image';
 import { headers } from 'next/headers';

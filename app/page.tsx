@@ -1,7 +1,7 @@
 import { Button, CardList, Header, IntroTitle, Spacing, Sponsor } from "@/components/landing";
 import Logo from "@/public/logo.png";
 import GoogleLogo from '@/public/sample-google.webp'
-import { CardListType } from "@/types/components";
+import { CardListType } from "@/types/landing/components";
 import { FaGithub } from "react-icons/fa";
 
 export default function Home() {

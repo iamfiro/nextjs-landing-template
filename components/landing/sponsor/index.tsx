@@ -1,4 +1,4 @@
-import { SponsorProps } from '@/types/components';
+import { SponsorProps } from '@/types/landing/components';
 import style from './style.module.scss';
 import Image from 'next/image';
 

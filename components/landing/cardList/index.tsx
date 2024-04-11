@@ -1,4 +1,4 @@
-import { CardListProps } from '@/types/components';
+import { CardListProps } from '@/types/landing/components';
 import style from './style.module.scss';
 import Image from 'next/image';
 

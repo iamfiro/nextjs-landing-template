@@ -1,4 +1,4 @@
-import { IntroTitleProps } from '@/types/components';
+import { IntroTitleProps } from '@/types/landing/components';
 import style from './style.module.scss'
 
 export const IntroTitle = ({ type, title, description, titleFontSize = 40, children, styles }: IntroTitleProps) => {

@@ -1,4 +1,4 @@
-import { borderRadiusValue, ButtonProps } from "@/types/components";
+import { borderRadiusValue, ButtonProps } from "@/types/landing/components";
 import style from './style.module.scss';
 
 const Button = ({
