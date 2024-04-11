@@ -1,10 +1,12 @@
+'use client'
+
 import { HeaderProps } from '@/types/landing/components';
 import style from './style.module.scss';
 import Image from 'next/image';
-import { headers } from 'next/headers';
+import { usePathname } from 'next/navigation';
 
 const Header = ({ logo, menu, children, logoWidth = 20, styles }: HeaderProps) => {
-    const path = headers().get('x-pathname') || '/';
+    const pathname = usePathname()
 
     return (
         <header className={style.container} style={styles}>
@@ -14,7 +16,7 @@ const Header = ({ logo, menu, children, logoWidth = 20, styles }: HeaderProps) =
                     {menu.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a href={item.href} data-selected={item.href === path}>{item.name}</a>
+                                <a href={item.href} data-selected={item.href === pathname}>{item.name}</a>
                             </li>
                         );
                     })}
