@@ -44,10 +44,10 @@
     --color-yellow-darker: #FBC02D;
     --color-yellow-darkest: #F9A825;
 
-    --font-wanted: 'Wanted Sans', sans-serif;
+    --font-noto: 'Noto Sans KR', sans-serif;
 }
 
-@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 html,
 body {
