@@ -1,6 +1,5 @@
 .container {
     width: var(--width-padding-20);
-    height: 65px;
     
     padding: 0 25px;
 
@@ -30,11 +29,15 @@
 .sponsor_list {
     margin-top: 25px;
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     img {
         height: 35px;
         width: auto;
 
-        margin: 0 10px;
+        margin: 0 10px 12px 10px;
     }
 
     &[data-gray="true"] {
