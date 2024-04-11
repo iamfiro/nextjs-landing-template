@@ -12,12 +12,12 @@
 
 .row_title {
     width: calc(100% - 420px);
+
     font-family: var(--font-wanted);
-    font-weight: 500;
+    text-align: left;
+    letter-spacing: -.5px;
 
     margin: 0;
-
-    color: var(--color-black);
 }
 
 .row_right {
