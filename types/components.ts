@@ -61,3 +61,16 @@ export interface SponsorProps {
 
     SponsorList?: SponsorListType[];
 }
+
+export interface CardListType {
+    title: string;
+    description: string;
+    icon: StaticImageData;
+}
+
+export interface CardListProps {
+    readonly title: string;
+    readonly description: string;
+    readonly list: CardListType[];
+    readonly styles?: React.CSSProperties;
+}

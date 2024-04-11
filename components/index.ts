@@ -3,3 +3,4 @@ export { default as IntroTitle } from "./introTitle";
 export { default as Spacing } from "./spacing";
 export { default as Button } from "./button";
 export { default as Sponsor } from "./sponsor";
+export { default as CardList } from "./cardList";
