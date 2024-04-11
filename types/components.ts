@@ -53,6 +53,7 @@ export interface SponsorListType {
 
 export interface SponsorProps {
     readonly title?: string;
+    readonly description?: string;
     readonly titleColor?: string;
     readonly titleFontSize?: number;
     readonly styles?: React.CSSProperties;
