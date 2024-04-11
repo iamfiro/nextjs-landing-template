@@ -1,6 +1,6 @@
 :root {
     // Width
-    --width-max: 1200px; // 원하시는 대로 수정해주세요
+    --width-max: 1440px; // 원하시는 대로 수정해주세요
     --width-padding-25: calc(100% - 50px);
 
     // Color
@@ -45,9 +45,11 @@
     --color-yellow-darkest: #F9A825;
 
     --font-noto: 'Noto Sans KR', sans-serif;
+    --font-wanted: 'Wanted Sans', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
 
 html,
 body {
